@@ -1,0 +1,63 @@
+{
+  "name": "gulp-rte",
+  "description": "Better dest handling for Gulp.",
+  "version": "0.1.1",
+  "homepage": "https://github.com/jonschlinkert/gulp-rte",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/gulp-rte.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/gulp-rte/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jonschlinkert/gulp-rte/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "dest",
+    "destination",
+    "file",
+    "filename",
+    "filepath",
+    "gulpplugin",
+    "name",
+    "output",
+    "path",
+    "paths",
+    "patterns",
+    "prop-string",
+    "props",
+    "rename",
+    "renamer",
+    "renaming"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "gulp": "^3.8.5",
+    "gulp-jshint": "^1.6.3",
+    "gulp-mocha": "^0.4.1",
+    "jshint-stylish": "^0.2.0",
+    "mocha": "^1.20.1",
+    "verb": "^0.2.13"
+  },
+  "dependencies": {
+    "gulp-util": "^2.2.19",
+    "rte": "^0.2.1",
+    "through2": "^0.5.1",
+    "xtend": "^3.0.0"
+  }
+}

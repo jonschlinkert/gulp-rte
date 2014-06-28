@@ -1,0 +1,19 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.rar
+*.sublime-*
+npm-debug.log
+
+# Always-ignor dirs
+/node_modules/
+/tmp/
+/temp/
+/vendor/
+
+TODO.md
