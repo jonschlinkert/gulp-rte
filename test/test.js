@@ -156,4 +156,32 @@ describe('rte dest routing', function () {
     stream.write(expected);
     stream.end();
   });
+
+
+  it('should use custom parsers defined on `options.parsers`', function (done) {
+    var stream = rte('dist/{a}/index{b}', {
+      parsers: [{
+        '{a}': function () {
+          return this.basename;
+        },
+        '{b}': function () {
+          return '.min.js';
+        }
+      }]
+    });
+
+    var expected = new gutil.File({
+      cwd: './',
+      base: 'foo/bar',
+      path: 'foo/bar/baz.coffee',
+      contents: null
+    });
+    stream.once('data', function (file) {
+      expect(file.path).to.equal('foo/bar/dist/baz/index.min.js');
+      done();
+    });
+
+    stream.write(expected);
+    stream.end();
+  });
 });
