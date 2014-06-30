@@ -1,7 +1,7 @@
 {
   "name": "gulp-rte",
   "description": "Better dest handling for Gulp.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://github.com/jonschlinkert/gulp-rte",
   "author": {
     "name": "Jon Schlinkert",
@@ -55,7 +55,7 @@
     "verb": "^0.2.13"
   },
   "dependencies": {
-    "rte": "^0.2.1",
+    "rte": "^0.2.2",
     "through2": "^0.5.1",
     "xtend": "^3.0.0"
   }
