@@ -76,7 +76,7 @@ gulp.task('default', function() {
 
 ### Random string
 
-Add a radomized string to any point in a file path:
+Add a randomized string to any point in a file path:
 
 ```js
 var context = {
